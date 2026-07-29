@@ -1,0 +1,19 @@
+{
+  "name": "heatwave-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Informational static site about heatwaves. Built with modern dev tooling for local development and production builds.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js,.html",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^2.8.0",
+    "eslint-plugin-html": "^6.0.0"
+  }
+}

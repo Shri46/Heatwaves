@@ -1,43 +1,59 @@
-# Climate Intelligence — Heatwave Monitoring
+ # Climate Intelligence — Heatwave Monitoring
 
-Simple static site demonstrating a heatwave monitoring UI. Ready to host on GitHub Pages or Netlify.
+Professional static site skeleton for heatwave information and alerts.
 
-Contents
+What's included
 - `index.html`, `about.html`, `prediction.html`, `warning.html`, `contact.html`
 - `style.css` — site styles
-- `script.js` — nav toggle + alert + year
+- `script.js` — minimal interactive JS
 
-Prerequisites
+Goals
+- Make the project easy to develop locally with fast refresh
+- Produce optimized production builds
+- Provide CI that lints, builds, and (optionally) deploys to GitHub Pages
+
+Requirements
+- Node.js 18+ and npm (for dev tooling)
 - A modern browser
-- (Optional) Git and a GitHub account to push the repo
 
-Preview locally
-1. Open a terminal in the project folder (`c:\Users\Exam\Documents\heatwave-website`).
-2. Start a simple HTTP server (Python):
+Quick start (development)
+1. Install dependencies:
 
-```powershell
-python -m http.server 8000
+```bash
+npm install
 ```
 
-3. Open http://localhost:8000 in your browser.
+2. Start the dev server with live reload:
 
-Push to GitHub (example)
-```powershell
-cd C:\Users\Exam\Documents\heatwave-website
-git init
-git add .
-git commit -m "Initial site: Climate Intelligence — Heatwave monitoring"
-git branch -M main
-git remote add origin https://github.com/Shri46/Heatwaves.git
-git push -u origin main
+```bash
+npm run dev
 ```
 
-Deploy options
-- GitHub Pages: push to the `main` branch and enable Pages from repository Settings → Pages (select `main`/`/ (root)`).
-- Netlify: drag & drop the project folder into Netlify Drop or connect the GitHub repo and set the publish directory to `/`.
+3. Open http://localhost:5173 (Vite default) in your browser.
 
-Notes
-- This site is static and intended for demo purposes only. Replace dummy content and contact details before publishing.
+Build for production
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+CI / Deployment
+- A GitHub Actions workflow is included at `.github/workflows/ci.yml` that runs linting and builds on push/pull-request to `main`. On a push to `main` it will deploy the `dist` folder to GitHub Pages using the provided `GITHUB_TOKEN`.
+
+Recommended next steps
+- Review `package.json` devDependencies and run `npm install` locally.
+- Add a `CNAME` file if you plan to use a custom domain for GitHub Pages.
+- Replace placeholder content and verify accessibility (ARIA, contrast) and SEO meta tags in `index.html`.
+
+Contributing
+- Fork, create a branch, run `npm install`, work on changes, then open a PR.
 
 License
-- Feel free to reuse and modify.
+- This project is free to reuse and adapt.
+
