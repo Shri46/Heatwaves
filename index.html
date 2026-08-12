@@ -1,98 +1,137 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GW2RQRKH30"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-GW2RQRKH30');
-</script>
-    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GW2RQRKH30"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GW2RQRKH30');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- SEO -->
     <title>Climate Intelligence — Heatwave Monitoring</title>
     <meta name="description" content="Monitor, predict and respond to heatwaves with Climate Intelligence">
+    <meta name="keywords" content="heatwave monitoring, heatwave prediction, heatwave warning, climate intelligence">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://shri46.github.io/Heatwaves/index.html">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:;base64,=" />
+    <link rel="icon" href="data:;base64,=">
+
 </head>
+
 <body>
+
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="index.html">Climate Intelligence</a>
-            <button id="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+
+            <a class="brand"
+               href="index.html"
+               title="Climate Intelligence Home">
+                Climate Intelligence
+            </a>
+
+            <button id="nav-toggle"
+                    aria-controls="site-nav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                ☰
+            </button>
+
             <nav id="site-nav" class="site-nav" role="navigation">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="prediction.html">Prediction</a>
-                <a href="warning.html">Warning</a>
-                <a href="contact.html">Contact</a>
+
+                <a href="index.html" title="Go to Home">Home</a>
+
+                <a href="about.html" title="Learn About Climate Intelligence">
+                    About
+                </a>
+
+                <a href="prediction.html" title="View Heatwave Predictions">
+                    Prediction
+                </a>
+
+                <a href="warning.html" title="View Heatwave Warnings">
+                    Warning
+                </a>
+
+                <a href="contact.html" title="Contact Us">
+                    Contact
+                </a>
+
             </nav>
         </div>
     </header>
 
     <main class="container">
+
         <section class="hero">
+
             <h1>Heatwave Monitoring System</h1>
-            <p class="lead">Welcome to our platform for monitoring, predicting, and managing heatwaves.</p>
+
+            <p class="lead">
+                Welcome to our platform for monitoring, predicting, and managing heatwaves.
+            </p>
+
             <div class="actions">
-                <button onclick="showAlert()" class="btn">Check Alert</button>
-                <a href="prediction.html" class="btn btn-outline">View Predictions</a>
+
+                <button onclick="showAlert()" class="btn">
+                    Check Alert
+                </button>
+
+                <a href="prediction.html"
+                   class="btn btn-outline"
+                   title="View Heatwave Predictions">
+                    View Predictions
+                </a>
+
             </div>
+
         </section>
 
         <section class="cards">
+
             <article class="card">
-                <h3>Real-time Monitoring</h3>
-                <p>Track temperature anomalies and vulnerability maps in near real-time.</p>
+                <h2>Real-time Monitoring</h2>
+                <p>
+                    Track temperature anomalies and vulnerability maps in near real-time.
+                </p>
             </article>
+
             <article class="card">
-                <h3>AI Predictions</h3>
-                <p>Short- and long-term forecasts driven by climate models and machine learning.</p>
+                <h2>AI Predictions</h2>
+                <p>
+                    Short- and long-term forecasts driven by climate models and machine learning.
+                </p>
             </article>
+
             <article class="card">
-                <h3>Early Warnings</h3>
-                <p>Receive actionable alerts and safety guidance for communities at risk.</p>
+                <h2>Early Warnings</h2>
+                <p>
+                    Receive actionable alerts and safety guidance for communities at risk.
+                </p>
             </article>
+
         </section>
+
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <p>© <span id="year"></span> Climate Intelligence — Built for demonstration.</p>
+            <p>
+                © <span id="year"></span>
+                Climate Intelligence — Built for demonstration.
+            </p>
         </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Climate Intelligence</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-<header>
-    <h1>Climate Intelligence</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="prediction.html">Prediction</a>
-        <a href="warning.html">Warning</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<section>
-    <h2>Heatwave Monitoring System</h2>
-    <p>Welcome to our platform for monitoring, predicting, and managing heatwaves.</p>
-    <button onclick="showAlert()">Check Alert</button>
-</section>
-
-<script src="script.js"></script>
 </body>
 </html>
