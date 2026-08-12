@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shri46.github.io/Heatwaves/sitemap.xml
