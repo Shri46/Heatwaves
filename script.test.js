@@ -6,15 +6,17 @@ const { showAlert } = require("./script");
 
 describe("Heatwave Website Unit Tests", () => {
 
-    test("showAlert displays the correct alert message", () => {
-        window.alert = jest.fn();
+   test("showAlert displays the correct alert message", () => {
+    window.alert = jest.fn();
 
-        showAlert();
+    const { showAlert } = require("./script.js");
 
-        expect(window.alert).toHaveBeenCalledWith(
-            "Stay indoors we dont want you going out and increasing the temperature, Hottie ;)"
-        );
-    });
+    showAlert();
+
+    expect(window.alert).toHaveBeenCalledWith(
+        "Stay indoors we dont want you going out and increasing the temperature, Hottie ;)"
+    );
+});
 
     test("mobile navigation opens when toggle is clicked", () => {
         document.body.innerHTML = `
