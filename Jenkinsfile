@@ -11,39 +11,39 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                bat 'npm ci'
+                sh 'npm ci'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'npm test -- --runInBand'
+                sh 'npm test -- --runInBand'
             }
         }
 
         stage('Build') {
             steps {
-                bat 'npm run build'
+                sh 'npm run build'
             }
         }
 
         stage('Docker Build') {
             steps {
-                bat 'docker build -t YOUR_DOCKERHUB_USERNAME/heatwaves:latest .'
+                sh 'docker build -t shritan46/heatwaves:latest .'
             }
         }
 
         stage('Deploy to Kubernetes') {
             steps {
-                bat 'kubectl apply -f k8s/deployment.yaml'
-                bat 'kubectl apply -f k8s/service.yaml'
+                sh 'kubectl apply -f k8s/deployment.yaml'
+                sh 'kubectl apply -f k8s/service.yaml'
             }
         }
     }
 
     post {
         always {
-            archiveArtifacts artifacts: 'index.html', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'index.html', fingerprint: true
         }
     }
 }
