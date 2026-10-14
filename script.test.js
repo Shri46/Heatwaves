@@ -14,7 +14,7 @@ describe("Heatwave Website Unit Tests", () => {
     showAlert();
 
     expect(window.alert).toHaveBeenCalledWith(
-        "Stay indoors we dont want you going out and increasing the temperature, Hottie ;)"
+        "Stay indoors ,HeatWave Warning Going On"
     );
 });
 
