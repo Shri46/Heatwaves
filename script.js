@@ -1,7 +1,7 @@
 
 // Show a simple alert for demonstrations
 function showAlert() {
-    alert("Stay indoors we dont want you going out and increasing the temperature, Hottie ;)");
+    alert("Stay indoors ,Heatwave Warning Ongoing ");
 }
 
 // Toggle mobile nav
